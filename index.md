@@ -16,7 +16,7 @@ This a reusable react library for shared components with design system methodolo
 It is a component library in which we can create all those common components between our applications. It will give us the ability to reduce code copied by our projects.
 
 These components must be transversal to our business and at no time should they have any logic to it.
-In order to know which component to put in the library, we can follow the rule that if it is needed in more than one project, it is reusable. If it is something customised or only for a specific project, it should not be added to our library.
+In order To know which component include in the library, we can follow the rule that if it is needed in more than one project, it is reusable. If it is something customised or only for a specific project, it should not be added to our library.
 
 ### What kind of components can we create here?
 
@@ -26,7 +26,7 @@ In order to know which component to put in the library, we can follow the rule t
 
 <strong>Organisms</strong>: A set of atomic components, molecules and even other organisms. They can be components such as a menu of sections, the header of the application.
 
-<strong>Templates</strong>: This is a grouping of all our components represented in a layout in which they can be reused. Let's imagine a layout container for all our apps, consisting of a header, menu and main container. We could abstract the logic inside and simply based on a series of props serve as a layout for any of our apps, and even with a different theme.
+<strong>Templates</strong>: This is a group of all our components represented in a layout in which they can be reused. Let's imagine a layout container for all our apps, consisting of a header, menu and main container. We could abstract the logic inside and simply based on a series of props serve as a layout for any of our apps, and even with a different theme.
 
 On a day-to-day basis, we don't need to create a 100% own library. The effort would be too high for some components. We can focus on making components of template or organism types. For the rest of the components we can use ui libraries like [Theme-ui](https://theme-ui.com/) or [Material ui](https://mui.com/). These libraries give us enough components that we can use directly or make small modifications for our design, besides that they allow us a good theming with their providers and we can change the whole palette of colours according to the application we are interested in.
 
@@ -54,6 +54,7 @@ Before each commit a pre hook will be run to validate errors in both the commit 
 # Upcoming
 
 Components to come in future iterations: a template of the application layout with its menu items.
+
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/poc_design.png?raw=true)
 
 
@@ -94,6 +95,7 @@ The Redux Toolkit package is intended to be the standard way to write Redux logi
 </em>
 
 ### Scaffolding
+
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/scaffolding.png?raw=true)
 
 ### Testing
@@ -109,7 +111,8 @@ The flow of our applications could be as follows:
 
 # Demo Show Time
 
-Referring to the first part that we have explained, I have based this as the first demo of many that we could do. But basically they are a demo of how to create a component library with the mentioned and a small next js application that logging us in firebase. It's just a premise of what could be done and together with this document everything we could build together.
+Concerning the first part that we have explained, I have based on this as the first demo of many that we could do. But basically it is a demo of how to create a component library and a small next js application that logs into firebase.
+It's just a premise of what could be done and together with this document everything we could build together.
 
 The projects concerned are: [ui-components](https://github.com/jambsik-labs/ui-components) and [auth app](https://github.com/jambsik-labs/auth)
 
