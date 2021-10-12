@@ -51,6 +51,12 @@ Before each commit a pre hook will be run to validate errors in both the commit 
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/3.png?raw=true)
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/4.png?raw=true)
 
+# upcoming
+
+Components to come in future iterations: a template of the application layout with its menu items.
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/poc_design.png?raw=true)
+
+
 # Common Library
 
 This library will have a common base with the one mentioned above. The main difference would be how to approach it. In this case we would not have a component library but a library that includes helpers,module, customs hooks and testing utilities and even models. All of this can become repetitive between the different applications we have. A kind of connector between all of them that facilitates development and avoids the repetitive propagation of code.
