@@ -51,7 +51,7 @@ Before each commit a pre hook will be run to validate errors in both the commit 
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/3.png?raw=true)
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/4.png?raw=true)
 
-# upcoming
+# Upcoming
 
 Components to come in future iterations: a template of the application layout with its menu items.
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/poc_design.png?raw=true)
