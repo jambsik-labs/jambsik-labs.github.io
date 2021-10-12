@@ -27,15 +27,19 @@ In order to know which component to put in the library, we can follow the rule t
 
 <strong>Templates</strong>: This is a grouping of all our components represented in a layout in which they can be reused. Let's imagine a layout container for all our apps, consisting of a header, menu and main container. We could abstract the logic inside and simply based on a series of props serve as a layout for any of our apps, and even with a different theme.
 
+On a day-to-day basis, we don't need to create a 100% own library. The effort would be too high for some components. We can focus on making components of template or organism types. For the rest of the components we can use ui libraries like [Theme-ui](https://theme-ui.com/) or [Material ui](https://mui.com/). These libraries give us enough components that we can use directly or make small modifications for our design, besides that they allow us a good theming with their providers and we can change the whole palette of colours according to the application we are interested in.
 
 ### How can we do this?
 [In the example of our library](https://github.com/jambsik-labs/ui-components)
 
-We have demonstrated small components with a storybook to visualise the content.
+We have demonstrated small components with a [storybook](https://github.com/jambsik-labs/https://jambsik-labs.web.app/?path=/story/atoms-button--default-case) to visualise the content.
 
-We worked with the rollup bundelizer to make the compilation of libraries easier.
+We worked with the [Rollup bundelizer](https://rollupjs.org/guide/en/)  to make the compilation of libraries easier.
 
 In each merge to master, github actions are executed to update our deployed storybook and to create an npm package and publish it.
+![]()
+
+
 
 All this is made easier with a good change history, for this we use semantic release which helps us to version our libraries and create an automatic log. To create this log, commits need to comply with a specific specification.
 Before each commit a pre hook will be run to validate errors in both the commit message and any other errors that may be reported by the eslint. Depends the every commit message the semantic release can publish a new version (PATCH, MINOR, MAJOR).
