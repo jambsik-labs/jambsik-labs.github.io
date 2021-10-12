@@ -1,15 +1,16 @@
 # What is the main idea?
 
 ##### The main idea of the project is to build an ecosystem of applications and libraries that communicate with each other.
+
 ##### And at the end of this document there is a small example of how to integrate our own library with a series of automated steps into one of our "POC" projects.
 
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/171dce733caa9e49814d3cd4f6f0110ff46972d1/img/flow_1.png?raw=true)
 
 #### Let's talk about each of them, how they relate to each other and what they are used for.
 
-
 # UI - components library
-### [source code link](https://github.com/jambsik-labs/ui-components) 
+
+### [source code link](https://github.com/jambsik-labs/ui-components)
 
 This a reusable react library for shared components with design system methodology in our apps.
 It is a component library in which we can create all those common components between our applications. It will give us the ability to reduce code copied by our projects.
@@ -30,15 +31,16 @@ In order to know which component to put in the library, we can follow the rule t
 On a day-to-day basis, we don't need to create a 100% own library. The effort would be too high for some components. We can focus on making components of template or organism types. For the rest of the components we can use ui libraries like [Theme-ui](https://theme-ui.com/) or [Material ui](https://mui.com/). These libraries give us enough components that we can use directly or make small modifications for our design, besides that they allow us a good theming with their providers and we can change the whole palette of colours according to the application we are interested in.
 
 ### How can we do this?
+
 [In the example of our library](https://github.com/jambsik-labs/ui-components)
 
 We have demonstrated small components with a [storybook](https://github.com/jambsik-labs/https://jambsik-labs.web.app/?path=/story/atoms-button--default-case) to visualise the content.
 
-We worked with the [Rollup bundelizer](https://rollupjs.org/guide/en/)  to make the compilation of libraries easier.
+We worked with the [Rollup bundelizer](https://rollupjs.org/guide/en/) to make the compilation of libraries easier.
 
 In each merge to master, github actions are executed to update our deployed storybook and to create an npm package and publish it.
 
-![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1.png?raw=true )
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1.png?raw=true)
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1b.png?raw=true)
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1c.png?raw=true)
 
@@ -55,5 +57,35 @@ This library will have a common base with the one mentioned above. The main diff
 
 # Applications
 
+I suggest you get Nextjs + typescript + Redux toolkit. Based on SSR.
 
+### [Next JS](https://nextjs.org/)
 
+Nextjs allows us to develop work with React Js in a faster and easier way. It saves us all the management and configuration of Babel, webpack, Hot module replacement to be able to make changes without the need for a full reload during development. It gives us a better performance in the application because we avoid work to the browser to serve directly the pages in html.
+It gives us the advantage of creating routes from its folder structure without the need to configure it. It is a full stack frame work in which we can even create Api routes.
+```
+Dev build system
+Production build system
+Prerendering
+    SSR
+    Build time
+    Static
+    Routing
+API routes 
+```
+
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/ssr.png?raw=true)
+
+### [Redux Toolkit](https://redux-toolkit.js.org/)
+Along the same line as next js. Redux toolkit is the solution or simplification of redux based on suggestions received by the redux team.
+
+<em>
+The Redux Toolkit package is intended to be the standard way to write Redux logic. It was originally created to help address three common concerns about Redux:
+
+"Configuring a Redux store is too complicated"
+"I have to add a lot of packages to get Redux to do anything useful"
+"Redux requires too much boilerplate code"
+</em>
+
+### Scaffolding
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/scaffolding.png?raw=true)
