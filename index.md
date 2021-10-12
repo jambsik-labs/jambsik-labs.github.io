@@ -100,3 +100,13 @@ I would concentrate on adding significant unit test coverage and a high level of
 The flow of our applications could be as follows:
 
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/flow.png?raw=true)
+
+# Demo Show Time
+
+Referring to the first part that we have explained, I have based this as the first demo of many that we could do. But basically they are a demo of how to create a component library with the mentioned and a small next js application that logging us in firebase. It's just a premise of what could be done and together with this document everything we could build together.
+
+The projects concerned are: [ui-components](https://github.com/jambsik-labs/ui-components) and [auth app](https://github.com/jambsik-labs/auth)
+
+# Overview
+
+I know I left out a lot of things like user information tracking, offiline, mobile, notifications, user information logs, authorisation, lazy loading, design, etc. But these are things that need to be solved step by step as they arise.
