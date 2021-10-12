@@ -9,7 +9,7 @@
 
 
 # UI - components library
-### [source code link](https://github.com/jambsik-labs/ui-components") 
+### [source code link](https://github.com/jambsik-labs/ui-components) 
 
 This a reusable react library for shared components with design system methodology in our apps.
 It is a component library in which we can create all those common components between our applications. It will give us the ability to reduce code copied by our projects.
@@ -29,7 +29,7 @@ In order to know which component to put in the library, we can follow the rule t
 
 
 ### How can we do this?
-[In the example of our library](https://github.com/jambsik-labs/ui-components")
+[In the example of our library](https://github.com/jambsik-labs/ui-components)
 
 We have demonstrated small components with a storybook to visualise the content.
 
