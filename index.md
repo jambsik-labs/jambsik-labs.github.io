@@ -89,3 +89,14 @@ The Redux Toolkit package is intended to be the standard way to write Redux logi
 
 ### Scaffolding
 ![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/scaffolding.png?raw=true)
+
+### Testing
+
+I would concentrate on adding significant unit test coverage and a high level of effort in integration testing of all our components. That is, how the different parts of the application communicate and interact but with api mocks. In the future we could consider testing the most important things with cypress in e2e version.
+
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/tests.png?raw=true)
+
+### Based on the information above
+The flow of our applications could be as follows:
+
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/flow.png?raw=true)
