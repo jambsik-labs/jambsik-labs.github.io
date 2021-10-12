@@ -37,17 +37,23 @@ We have demonstrated small components with a [storybook](https://github.com/jamb
 We worked with the [Rollup bundelizer](https://rollupjs.org/guide/en/)  to make the compilation of libraries easier.
 
 In each merge to master, github actions are executed to update our deployed storybook and to create an npm package and publish it.
-<img src="https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1.png?raw=true " width="50%" height="auto">.
-<img src="https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1b.png?raw=true " width="50%" height="auto">.
-<img src="https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1c.png?raw=true " width="50%" height="auto">.
+
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1.png?raw=true )
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1b.png?raw=true)
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/1c.png?raw=true)
 
 All this is made easier with a good change history, for this we use semantic release which helps us to version our libraries and create an automatic log. To create this log, commits need to comply with a specific specification.
 Before each commit a pre hook will be run to validate errors in both the commit message and any other errors that may be reported by the eslint. Depends the every commit message the semantic release can publish a new version (PATCH, MINOR, MAJOR).
 
-<img src="https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/2.png?raw=true " width="50%" height="auto">.
-<img src="https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/3.png?raw=true " width="50%" height="auto">.
-<img src="https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/4.png?raw=true " width="50%" height="auto">.
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/2.png?raw=true)
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/3.png?raw=true)
+![](https://github.com/jambsik-labs/jambsik-labs.github.io/blob/master/img/4.png?raw=true)
 
+# Common Library
+
+This library will have a common base with the one mentioned above. The main difference would be how to approach it. In this case we would not have a component library but a library that includes helpers,module, customs hooks and testing utilities and even models. All of this can become repetitive between the different applications we have. A kind of connector between all of them that facilitates development and avoids the repetitive propagation of code.
+
+# Applications
 
 
 
